@@ -6,7 +6,7 @@ describe("Falha no teste pois", function() {
   var lista0 = [];
   var lista1 = [1,2,3,6,7];
   var lista2 = [1,'A',3,4];
-
+  var listaEsperada = [[1,2,3],[6,7]];
   // PRIMEIRO CASO
   it("a lista é de nula.", function() {
     expect(false).toBe(app.ehNula(lista1));
@@ -24,6 +24,11 @@ describe("Falha no teste pois", function() {
   // QUARTO CASO
   it("a lista é de números.", function() {
     expect(false).toBe(app.ehNumero(lista2));
+  });
+
+  // QUINTO CASO
+  it("a lista não é esperada.", function() {
+    expect(listaEsperada).toEqual(app.intervalos(lista1));
   });
 
 });
