@@ -9,7 +9,13 @@ module.exports = {
     }
   },
   ehNumero: function(lista) {
-    return true;
+    var res =  true;
+    for (var i = 0; i < lista.length; i++) {
+      if (!Number.isInteger(lista[i])) {
+        res = false;
+      }
+    }
+    return res;
   }
 
 };
