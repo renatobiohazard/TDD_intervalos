@@ -31,4 +31,9 @@ describe("Falha no teste pois", function() {
     expect(listaEsperada).toEqual(app.intervalos(lista1));
   });
 
+  // SEXTO CASO
+  it("a lista não é esperada.", function() {
+    expect(listaEsperada).not.toEqual(app.intervalos(lista2));
+  });
+
 });
