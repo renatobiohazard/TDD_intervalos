@@ -18,7 +18,7 @@ describe("Falha no teste pois", function() {
   
 // TERCEIRO CASO
   it("a lista não é de números.", function() {
-  	  expect(true).toBe(app.ehNumero(lista2));
+  	  expect(true).toBe(app.ehNumero(lista1));
   });
 
   // QUARTO CASO
