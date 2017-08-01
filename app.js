@@ -7,6 +7,9 @@ module.exports = {
     } else {
       return true;
     }
+  },
+  ehNumero: function(lista) {
+    return true;
   }
 
 };
