@@ -7,11 +7,11 @@ describe("Falha no teste pois", function() {
   var lista1 = [1,2,3,6,7];
 
   // PRIMEIRO CASO
-  it("a lista nao é de nula.", function() {
+  it("a lista é de nula.", function() {
     expect(false).toBe(app.ehNula(lista1));
   });
   
-  it("a lista é de nula.", function() {
+  it("a lista nao é de nula.", function() {
     expect(true).toBe(app.ehNula(lista0));
   });
   
