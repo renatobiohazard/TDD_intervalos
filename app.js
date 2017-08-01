@@ -16,6 +16,22 @@ module.exports = {
       }
     }
     return res;
+  },
+  intervalos: function(lista) {
+    var retorno = [];
+    var temp = [];
+    for (var i = 0; i < lista.length; i++) {
+      if (lista[i] !== null) {
+        if ((lista[i] + 1) === lista[i + 1]) {
+          temp.push(lista[i]);
+        } else {
+          retorno.push(temp);
+          temp.push(lista[i]);
+          temp = [];
+        }
+      }
+    }
+    return retorno;
   }
 
 };
